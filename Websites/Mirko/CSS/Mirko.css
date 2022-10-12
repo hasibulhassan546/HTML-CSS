@@ -1,0 +1,1101 @@
+body
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.nav
+{
+    width: 100%;
+    top: 0;
+    position: fixed;
+    height:fit-content;
+    background: rgba(33, 45, 55, 0.9);
+    /* background: #212d37; */
+    overflow:auto;
+    padding-bottom: 20px;
+    z-index: 1;
+    overflow:visible;
+}
+
+.nav b
+{
+    position: relative;
+    top: 20px;
+    display: inline;
+    color: lime;
+    font-size: 20px;
+    clear: right;
+    left: 9%;
+    width: fit-content;
+}
+
+.nav li
+{
+    list-style: none;
+    color: white;
+    float: right;    
+    margin-right: 20px;
+}
+
+.nav li img
+{
+    position: relative;
+    top: 2px;
+    width: 15px;
+    margin: 0 0 0 2px;
+    transform: rotate(180deg);
+    transition-duration: 0.4s;
+
+}
+
+.nav input
+{
+    position: absolute;
+    padding: 10px 30px;
+    background: transparent;
+    border: transparent;
+    outline: none;
+    width: 65px;
+    top: 25px;
+    right: 100px;
+    -webkit-appearance: none;
+}
+
+.nav input:checked ~ .dropdown
+{
+    transition-duration: 0.4s;
+    opacity: 1;
+}
+
+.nav input:checked + li > img
+{
+    transform: rotate(0deg);
+    transition-duration: 0.4s;
+}
+
+.nav a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.nav a:hover
+{
+    color: rgba(25, 255, 63, 0.9);
+    text-decoration: underline rgba(50, 189, 50, 0.9);
+}
+
+.nav a:active
+{
+    color: rgba(43, 172, 43, 0.9);
+}
+
+.dropdown
+{
+    position: absolute;
+    top: 70px;
+    right: 45px;
+    width: fit-content;
+    background: rgba(33, 45, 55, 0.9);
+    padding: 10px;
+    opacity: 0;
+    -webkit-appearance: none;
+    border-radius: 5px;
+}
+
+.dropdown a
+{
+    display: block;
+    float: none;
+    text-align: left;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px ;
+}
+
+.dropdown hr
+{
+    height: 1px;
+    background: gray;
+    outline: none;
+    border: none;
+}
+
+header
+{
+    height: fit-content;
+    width: 100%;
+    height: 650px;
+    background: url(../img/home.jpg) no-repeat center center ;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: auto;
+}
+
+header h1
+{
+
+    color: white;
+    height: fit-content;
+    max-width: 600px;
+    font-size: 55px;
+    font-family: Poppins, sans-serif;
+    font-weight: normal;
+    margin: 80px 0 0 40px;
+    text-align: left;
+
+}
+.green
+{
+    background: linear-gradient(rgba(174, 233, 13, 0.959), rgba(25, 255, 63, 0.9));
+    background-clip: content-box;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+header p
+{
+    color: rgb(214, 207, 207);
+    max-width: 400px;
+    font-size: 17px;
+    margin-left: 40px;
+}
+
+header li
+{
+    color: rgb(219, 214, 214);
+    max-width: 400px;
+    font-size: 17px;
+    margin-left: 30px;
+    list-style: circle;
+    line-height: 40px;
+}
+
+header a
+{
+    position: relative;
+    top: 60px;
+    left: 40px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: transparent;
+    border: 2px solid rgb(0, 255, 42);
+    padding: 15px 20px;
+    box-shadow: 5px 5px 0px rgb(92, 209, 14);
+}
+
+header a:hover
+{
+    top: 63px;
+    left: 45px;
+    box-shadow: none;
+    transition-duration: 0.1s;
+}
+
+.container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.tiles
+{
+    text-align: center;
+    width: 33.3333333%;
+    height: fit-content;
+    padding: 20px 0 50px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tiles img
+{
+    width: 50px;
+}
+
+.tiles h1
+{
+    margin: 0 0 15px;
+}
+
+.tiles p
+{
+    color: rgb(185, 177, 177);
+    font-size: 15px;
+    margin: 0 40px;
+}
+
+#tiles1
+{
+    color: white;
+    background: #1c262f;
+}
+
+#tiles2
+{
+    color: white;
+    background: #212d37;
+}
+
+#tiles3 h2
+{
+    color: black;
+}
+
+#tiles3 p
+{
+    color: rgb(49, 46, 46);
+}
+
+.container2
+{
+    position: relative;
+    display: block;
+    background: #212d37;
+    padding: 40px 0;
+    height: fit-content;
+}
+
+.container2 h3
+{
+    color: white;
+    font-family: serif;
+    max-width: 500px;
+    margin-left: 20px;
+    text-align: left;
+    margin-block-start: 0px;
+}
+
+.container2 h1
+{
+    color: white;
+    display: inline;
+    font-size: 44px;
+    max-width: 500px;
+    clear: right;
+    margin-left: 20px;
+    text-align: left;
+}
+.container2 p
+{
+    max-width: 500px;
+    clear: right;
+    color: rgb(184, 170, 170);
+    margin-left: 20px;
+}
+
+.container2 img
+{
+    position: relative;
+    /* display: inline-block; */
+    max-width: 300px;
+    float: right;
+    bottom: 350px;
+    clear: both;
+    right: 20px;
+    margin-block-end: 0px;
+
+}
+
+.container2 a
+{
+    position: relative;
+    display: block;
+    color: white;
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+    background: transparent;
+    text-transform: uppercase;
+    border: 2px solid rgb(0, 255, 42);
+    padding: 15px 20px;
+    margin-top: 50px;
+    margin-left: 20px;
+    box-shadow: 5px 5px 0px rgb(92, 209, 14);
+}
+
+.container2 a:hover
+{
+    top: 3px;
+    left: 3px;
+    box-shadow: none;
+    transition-duration: 0.1s;
+}
+
+.container3
+{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: #1c262f;
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+.container3 h3, h1
+{
+    display: block;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.container3 p
+{
+    color: rgb(211, 197, 197);
+    text-align: center;
+    width: 75%;
+}
+
+.container3 .tiles2
+{
+    width: 30%;
+    border: 2px solid white;
+    margin-top: 20px;
+    padding: 25px 0px;
+}
+
+.container3 .tiles2 img
+{
+    margin-left: 15px;
+}
+
+.container3 .tiles2 h2
+{
+    color: white;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.container3 .tiles2 p
+{
+    text-align: left;
+    margin-left: 15px;
+
+}
+
+.container3 .tiles2:hover
+{
+    border: 2px solid rgb(25, 216, 57);
+    box-shadow: 7px 7px 0px rgb(0, 255, 42);
+    transform: scale(1.03);
+    transition-duration: 0.1s;
+}
+
+.container4
+{
+    background: #212d37;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.container4 h3
+{
+    display: block;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.container4  h1
+{
+    display: block;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-weight: normal;
+}
+
+.container4  p
+{
+    text-align: center;
+    width: 75%;
+    color: rgb(206, 201, 201);
+    margin-left: 20px;
+
+}
+
+.container4 .tiles3
+{
+    width: 31%;
+    height: fit-content;
+    padding: 50px 0px;
+    border: 2px solid rgba(0, 255, 42,0.7);
+    border-radius: 5px;
+    margin-top: 20px;
+    
+}
+
+.container4 .tiles3:hover
+{
+    box-shadow: 5px 5px 0px rgba(25, 255, 63, 0.9);
+    transform: scale(1.03);
+}
+
+.tiles3 h1
+{
+    display: inline;
+    text-align: left;
+    font-size: 20px;
+    max-width: 200px;
+    margin-left: 17px;
+}
+
+.tiles3 p
+{
+    margin-left: 17px;
+    text-align: left;
+}
+
+
+.tiles3 li
+{
+    list-style: circle;
+    color: white;
+    line-height: 50px;
+    font-weight: bold;
+    margin-left: 17px;
+}
+
+.tiles3 b
+{
+    display: block;
+    color: white;
+    font-size: 25px;
+    margin-left: 15px;
+}
+
+.tiles3 a
+{
+    position: relative;
+    display: block;
+    color: white;
+    width: 100px;
+    text-decoration: none;
+    background: transparent;
+    border: 2px solid rgb(0, 255, 42);
+    padding: 15px 20px;
+    margin: 20px 0 0 15px;
+    box-shadow: 5px 5px 0px rgb(92, 209, 14);
+    text-align: center;
+}
+
+.tiles3 a:hover
+{
+    top: 5px;
+    left: 5px;
+    box-shadow: none;
+    transition-duration: 0.1s;
+}
+
+.container5
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: #212d37;
+
+}
+
+.container5 .tiles4
+{
+    width: 49%;
+    padding: 50px 0px;
+}
+
+.tiles4 img
+{
+    position: relative;
+    width: 98%;
+    top: 50%;
+    transform: translate(0, -50%);
+} 
+
+.tiles4 h2
+{
+    position: relative;
+    color: white;
+    margin-left: 25px;
+    text-align: left;
+}
+
+.tiles4 h3
+{
+    color: white;
+    margin-left: 25px;
+}
+
+
+.tiles4 p
+{
+    color: rgb(190, 185, 185);
+    margin-left: 25px;
+}
+
+.inside
+{
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 15px;
+    clear: both;
+}
+
+.inside img
+{
+    margin-left: 25px;
+    width: 25px;
+}
+
+.slider
+{
+    height: fit-content;
+    padding-bottom: 50px;
+    background: #212d37;
+    overflow: auto;
+}
+
+.slider h3, h2
+{
+    color: white;
+    text-align: center;
+}
+
+.slider p
+{
+    color: rgb(197, 188, 188);
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.holder
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.slider .tiles5
+{
+    border: 2px solid rgba(25, 255, 63, 0.9);
+    display: inline-block;
+    width: 220px;
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+
+.slider .tiles5:hover
+{
+    box-shadow:5px 5px 0px rgb(0, 255, 42);
+    transform: scale(1.03);
+}
+
+
+
+.tiles5 p
+{
+    position: relative;
+    width: 140px;
+    color: rgb(230, 230, 230);
+    text-align: left;
+
+}
+
+.tiles5 img
+{
+    display: inline;
+    width: 70px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 20px;
+
+}
+
+.tiles5 .right
+{
+    display: inline;
+    width: 100px;
+    float: right;
+    margin-top: 20px;
+    color: rgba(25, 255, 63, 0.9);
+}
+
+.tiles5 .white
+{
+    color: white;
+    float: right;
+    margin-right: 15px;
+}
+
+.subscribe
+{
+    background: #1c262f;
+    margin-top: 0;
+    padding: 20px;
+}
+
+.subscribe h3
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: white;
+    text-align: center;
+}
+
+.subscribe p
+{
+    color: rgb(219, 210, 210);
+    text-align: center;
+    margin: 15px 100px;
+}
+
+.subscribe form
+{
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+
+}
+
+.subscribe input
+{
+    width: 300px;
+    height: 50px;
+    padding: 0 0 0 20px;
+    outline: none;
+    left: 50%;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+input::placeholder
+{
+    font-weight: 800;
+}
+
+.subscribe button
+{
+    position: relative;
+    padding: 17px 20px;
+    background: transparent;
+    border: 2px solid rgba(25, 255, 63, 0.9);
+    color: white;
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 16px;
+    box-shadow: 4px 4px 0px rgba(46, 216, 46, 0.9);
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.subscribe button:hover
+{
+    top: 3px;
+    left: calc(50% + 3px);
+    box-shadow: none;
+    transition-duration: 0.1s;
+}
+
+.subscribe button:active
+{
+    background: linear-gradient(45deg, rgb(50, 189, 50), rgb(50, 157, 189));
+    border: 2px solid black;
+}
+
+.message
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: #212d37;
+    padding-bottom: 50px;
+}
+
+.message h2, .message h1, .message p
+{
+    text-align: left;
+    margin-left: 30px;
+}
+
+.message p
+{
+    color: rgb(231, 223, 223);
+}
+
+.message .tiles6
+{
+    display: inline-block;
+    max-width: 460px;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+.tiles6 form
+{
+    margin-left: 30px;
+}
+
+.tiles6 input
+{
+    display: inline-block;
+    width: 180px;
+    height: 40px;
+    padding: 0 0 0 25px;
+    margin-bottom: 20px;
+    outline: none;
+    border-radius: 4px;
+    border: transparent;
+}
+
+input[type="email"]
+{
+    display: block;
+    width: 413px;
+}
+
+textarea
+{
+    font-weight: 600;
+    resize: vertical;
+    display: block;
+    max-width: 99.9%;
+    margin-bottom: 20px;
+    outline: none;
+    padding: 20px 0 0 25px;
+    border-radius: 4px;
+
+}
+
+textarea::placeholder
+{
+    font-size: 19px;
+    font-weight: 900;
+}
+
+.tiles6 button
+{
+    position: relative;
+    height: 50px;
+    width: 100px;
+    color: white;
+    font-weight: 750;
+    background: transparent;
+    border: 2px solid rgba(46, 216, 46, 0.9);
+    margin-right: 30px;
+    margin-top: 10px;
+    box-shadow: 3px 3px 0px rgba(50, 189, 50, 0.9);
+}
+
+.tiles6 button:hover
+{
+    top: 3px;
+    left: 3px;
+    box-shadow: none;
+    transition-duration: 0.1s;
+}
+
+.tiles6 button:active
+{
+    background: #171f25;
+}
+
+.tiles6 img
+{
+    position: relative;
+    width: 95%;
+    margin: 20px auto;
+    top: 57%;
+    transform: translate(0, -50%);
+}
+
+.details
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #1c262f;
+    padding: 20px;
+}
+
+.details .tiles7
+{
+    max-width: 400px;
+    padding-right: 40px;
+    position: relative;
+    top: 50%;
+    /* transform: translate(0, -50%); */
+    display: inline-block;
+}
+
+.tiles7 img
+{
+    position: relative;
+    top: 45px;
+}
+
+.tiles7 p
+{
+    position: relative;
+    left: 40px;
+    bottom: 10%;
+    transform: translate(0, -50%);
+}
+
+.tiles7 a
+{
+    text-decoration: none;
+}
+
+.tiles7 a:hover
+{
+    text-decoration: underline;
+    text-decoration-color: gray;
+}
+
+.p1
+{
+    font-weight: bold;
+    color: white;
+}
+
+.p2
+{
+    color: gray;
+    font-weight: bold;
+
+}
+
+#btn img
+{
+    background: green;
+    padding: 20px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    transform: translate(-50%, -50%);
+}
+
+#btn img:hover
+{
+    background: rgb(11, 94, 11);
+    transition-duration: 0.3s;
+}
+
+.container6
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: #212d37;
+    padding-bottom: 50px;
+}
+
+.container6 .tiles8
+{
+    width: 200px;
+    padding: 0 20px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.tiles8 h4
+{
+    color: rgba(50, 189, 50, 0.9);
+    text-align: left;
+}
+
+.tiles8 p
+{
+    color: rgb(224, 219, 219);
+}
+
+.tiles8 li
+{
+    list-style: circle;
+    color: white;
+    margin-top: 15px;
+}
+
+.tiles8 a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.tiles8 li>a:hover
+{
+    width: fit-content;
+    color: rgba(50, 189, 50, 0.9);
+    text-decoration: underline;
+}
+
+a.blue
+{
+    color: rgb(38, 4, 233);
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+}
+
+a.lightblue
+{
+    color: rgb(56, 186, 230);
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+}
+
+a.red
+{
+    color: rgb(243, 0, 0);
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+}
+
+a.blue:hover, a.lightblue:hover, a.red:hover
+{
+    text-decoration: underline;
+}
+
+.tiles8 form
+{
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.tiles8 input
+{
+    position: relative;
+    width: 200px;
+    height: 40px;
+    padding-left: 20px;
+    outline: none;
+    font-weight: bold;
+}
+
+.tiles8 button
+{
+    position: relative;
+    padding: 15px;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 10px;
+    background: linear-gradient(45deg, rgb(50, 189, 50), rgb(50, 157, 189));
+    border: transparent;
+    box-shadow: 5px 5px 0px rgba(50, 189, 50, 0.9);
+}
+
+.tiles8 button:hover
+{
+    box-shadow: none;
+    top: 3px;
+    left: calc(50% + 3px);
+    transition-duration: 0.1s;
+}
+
+@media (max-width:900px) ,
+html{
+
+    header h1
+    {
+        width: 400px;
+    }
+    
+    .tiles
+    {
+        width: 100%;
+    }
+
+    .container2 > img
+    {
+        float: none;
+        bottom: 0px;
+        margin-top: 20px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .container3 .tiles2
+    {
+        width: 80%;
+    }
+
+    .container4 .tiles3
+    {
+        width: 85%;
+    }
+
+    .tiles3 a
+    {
+        width: 20%;
+    }
+
+    .container5 .tiles4
+    {
+        width: 90%;
+    }
+
+    .slider .tiles5
+    {
+        width: 80%;
+    }
+
+    .tiles5 p
+    {
+        margin: 0px 20px;
+    }
+
+    .message .tiles6
+    {
+        position: relative;
+        width: 90%;
+        margin: 0;
+    }
+
+    .details .tiles7
+    {
+        width: 90%;
+    }
+
+    .container6 .tiles8
+    {
+        width: 90%;
+    }
+    
+}
+
+@media (max-width:950px) ,
+html {
+    .message .msg-img
+    {
+        width: 0;
+    }
+
+    .message input
+    {
+        width: 100%;
+    }
+}
+
+@media (max-width:600px) ,
+html {
+     .nav li
+     {
+         font-size: 13px;
+     }
+}

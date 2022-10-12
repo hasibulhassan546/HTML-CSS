@@ -1,0 +1,235 @@
+body
+{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.navbar
+{
+    position: relative;
+    background-color: #35424a;
+    overflow: auto;
+    height: fit-content;
+    width: 100%;
+    border-bottom: 4px solid rgb(66, 247, 49);
+    line-height: 50px;
+
+}
+
+span.green
+{
+    color: rgb(66, 247, 49);
+}
+span.white
+{
+    color: white;
+}
+b
+{
+    display: inline-block;
+    width: fit-content;
+    line-height: 100px;
+    margin-left: 100px;
+    font-size: 30px;
+}
+
+.list
+{
+    position: relative;
+    /* display: inline-block; */
+    overflow: auto;
+    float: right;
+    line-height: 100px;
+}
+
+li
+{
+    list-style: none;
+    padding-right: 40px;
+    float: right;
+}
+
+a.link
+{
+    text-decoration: none;
+    color:rgb(197, 180, 180);
+    font-weight: bold;
+}
+
+a.link:hover
+{
+    color: #fff;
+}
+
+.list a:active
+{
+    color: rgb(204, 5, 5);
+    
+}
+
+.subscribe
+{
+    display: block;
+    height: fit-content;
+    width: 100%;
+    background: #35424a;
+    margin-top: 0;
+    line-height: 50px;
+    overflow: auto;
+    text-align: center;
+}
+
+.both
+{
+    float: right;
+    height: fit-content;
+    width: fit-content;
+    margin: 0 150px 15px auto;
+}
+
+#mail
+{
+
+    display: inline;
+    width: 250px;
+    height: 40px;
+    margin-left: 70px;
+    margin:25px 0 0 0px;
+}
+.btn
+{
+    display: inline;
+    background: rgb(66, 247, 49);
+    color: black;
+    text-decoration: none;
+    padding: 13px 20px 14px 20px;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+
+
+.subscribe a:hover
+{
+    border: 2px solid black;
+    padding: 13px 18px ;
+}
+
+.subscribe a:active
+{
+    color: rgba(0, 0, 0, .5);
+
+}
+
+h2
+{
+    display: inline-block;
+    width: fit-content;
+    /* margin-left: 100px; */
+    color: rgb(66, 247, 49);
+    font-size: 25px;
+}
+
+.container
+{
+    position: relative;
+    background-image: url(img/bg.png);
+    /* background-attachment: fixed; */
+    background-size: cover;
+    position: relative;
+    height: fit-content;
+    padding: 40px 20px;
+    overflow: auto;
+}
+
+fieldset
+{
+    position: relative;
+    border: none;
+    border-radius: 15px 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 70%;
+    padding: 25px 20px;
+    text-align: center;
+
+ 
+}
+
+.btn1
+{
+    background-color: rgb(66, 247, 49); 
+    padding: 10px 15px;
+    font-family: serif;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn1:hover
+{
+    box-shadow: 1px 1px 20px #000;
+}
+
+.btn1:active
+{
+    color: rgba(0, 0, 0, .8);
+}
+    
+.quote
+{
+    transform: translate(-50%);
+    padding-bottom: 60px;
+    color: rgb(39, 139, 122);
+    font-weight: bolder;
+    margin-bottom: 90px;
+}
+
+.container input
+{
+    position: relative;
+    display: block;
+    width: 200px;
+    left: 50%;
+    transform: translate(-50%);
+    background: transparent;
+    margin-bottom: 10px;
+    padding: 5px 20px;
+    border: 2px solid rgba(0, 255, 0, 0.7);
+    border-radius: 5px;
+    color: lime;
+    outline: none;
+}
+
+.container input::placeholder
+{
+    font-weight: bold;
+}
+
+textarea
+{
+    display: inline-block;
+    resize: vertical;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid lime;
+    background: transparent;
+    color: lime;
+    margin-bottom: 10px;
+
+}
+
+textarea::placeholder
+{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+footer
+{
+    line-height: 80px;
+    background-color: rgb(66, 247, 49);
+    font-weight: bold;
+    text-align: center;
+}

@@ -1,0 +1,337 @@
+body
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.nav
+{
+    width: 100%;
+    top: 0;
+    position: fixed;
+    height:fit-content;
+    background: rgba(33, 45, 55, 0.9);
+    /* background: #212d37; */
+    overflow:auto;
+    padding-bottom: 20px;
+    z-index: 1;
+    overflow:visible;
+}
+
+.nav b
+{
+    position: relative;
+    top: 20px;
+    display: inline;
+    color: lime;
+    font-size: 20px;
+    clear: right;
+    left: 9%;
+    width: fit-content;
+}
+
+.nav li
+{
+    list-style: none;
+    color: white;
+    float: right;    
+    margin-right: 20px;
+}
+.nav li img
+{
+    position: relative;
+    top: 2px;
+    width: 15px;
+    margin: 0 0 0 2px;
+    transform: rotate(180deg);
+    transition-duration: 0.4s;
+}
+
+.img00:hover
+{
+    transform: rotate(180deg);
+}
+
+.nav input
+{
+    position: absolute;
+    padding: 10px 30px;
+    background: transparent;
+    border: transparent;
+    outline: none;
+    width: 65px;
+    top: 25px;
+    right: 100px;
+    -webkit-appearance: none;
+}
+
+.nav input:checked ~ .dropdown
+{
+    transition-duration: 0.4s;
+    opacity: 1;
+}
+
+.nav input:checked + li > img
+{
+    transform: rotate(0deg);
+    transition-duration: 0.4s;
+}
+
+.nav a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.nav a:hover
+{
+    color: rgba(25, 255, 63, 0.9);
+    text-decoration: underline rgba(50, 189, 50, 0.9);
+}
+
+.nav a:active
+{
+    color: rgba(43, 172, 43, 0.9);
+}
+
+.dropdown
+{
+    position: absolute;
+    top: 70px;
+    right: 45px;
+    width: fit-content;
+    background: rgba(33, 45, 55, 0.9);
+    padding: 10px;
+    opacity: 0;
+    -webkit-appearance: none;
+    border-radius: 5px;
+}
+
+.dropdown a
+{
+    display: block;
+    float: none;
+    text-align: left;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px ;
+}
+
+.dropdown hr
+{
+    height: 1px;
+    background: gray;
+    outline: none;
+    border: none;
+}
+
+header
+{
+    background: rgba(33, 45, 55, 1);
+    position: relative;
+    top: 68px;
+    width: 100%;
+}
+
+header h1
+{
+    display: inline-block;
+    position: relative;
+    color: white;
+    font-size: 50px;
+    top: 20px;
+    left: 9%;
+    padding: 10px 0 50px 0;
+}
+
+.details
+{
+    margin-top: 60px;
+    padding: 20px 0 0px 30px;
+}
+
+h5
+{
+    font-size: 30px;
+    font-weight: normal;
+    margin: 30px 0;
+}
+
+.details li
+{
+    list-style: square;
+    margin: 20px 0;
+}
+
+.div1, .div2
+{
+    padding: 20px 0 20px 50px;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.05);
+    margin: 0 15px 0 30px;
+}
+
+.div1 h5
+{
+    font-weight: normal;
+    margin: 10px;
+}
+
+.div1 p
+{
+    font-size: 15px;
+}
+
+.details2
+{
+    padding: 20px 15px 0 30px;
+}
+
+.details3
+{
+    padding: 0 15px 0 30px;
+}
+
+.details4
+{
+    margin: 0 15px 0 30px;
+}
+
+.details4 li
+{
+    list-style: square;
+    margin: 20px 15px 20px 30px;
+    list-style: decimal;
+}
+
+.div2 h5
+{
+    font-size: 25px;
+}
+
+.div2 p
+{
+    font-size: 15px;
+}
+
+.div3 p
+{
+    margin: 10px 15px 20px 30px;
+}
+
+.container6
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: #212d37;
+    padding-bottom: 50px;
+}
+
+.container6 .tiles8
+{
+    width: 200px;
+    padding: 0 20px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.tiles8 h4
+{
+    color: rgba(50, 189, 50, 0.9);
+    text-align: left;
+}
+
+.tiles8 p
+{
+    color: rgb(224, 219, 219);
+}
+
+.tiles8 li
+{
+    list-style: circle;
+    color: white;
+    margin-top: 15px;
+}
+
+.tiles8 a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.tiles8 li>a:hover
+{
+    width: fit-content;
+    color: rgba(50, 189, 50, 0.9);
+    text-decoration: underline;
+}
+
+a.blue
+{
+    color: rgb(38, 4, 233);
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+}
+
+a.lightblue
+{
+    color: rgb(56, 186, 230);
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+}
+
+a.red
+{
+    color: rgb(243, 0, 0);
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+}
+
+a.blue:hover, a.lightblue:hover, a.red:hover
+{
+    text-decoration: underline;
+}
+
+.tiles8 form
+{
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.tiles8 input
+{
+    position: relative;
+    padding: 0 0 0 15px;
+    width: 200px;
+    height: 40px;
+    outline: none;
+    font-weight: 600;
+}
+
+.tiles8 button
+{
+    position: relative;
+    padding: 15px;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 10px;
+    background: linear-gradient(45deg, rgb(50, 189, 50), rgb(50, 157, 189));
+    border: transparent;
+    box-shadow: 5px 5px 0px rgba(50, 189, 50, 0.9);
+}
+
+.tiles8 button:hover
+{
+    box-shadow: none;
+    top: 3px;
+    left: calc(50% + 3px);
+    transition-duration: 0.1s;
+}
