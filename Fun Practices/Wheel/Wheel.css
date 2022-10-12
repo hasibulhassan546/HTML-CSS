@@ -1,0 +1,155 @@
+                     body
+{
+    background-color: #000;
+}
+
+.chck
+{
+    position: relative;
+    top: 400px;
+}
+
+input[type="checkbox"]
+{
+	position: relative;
+	height: 40px;
+	width: 120px;
+	background: linear-gradient(0deg, #333, #000);
+	outline: none;
+	-webkit-appearance:none;
+	box-shadow: 0 0 0 4px #353535, 0 0 0 5px #333, inset 0 0 10px rgba(0,0,0,1), 0 5px 20px rgba(0,0,0,.5), inset 0 0 15px rgba(0,0,0,.2) ;
+	border-radius: 20px;
+	transition-delay:0.25s;
+}
+
+
+input[type="checkbox"]:before{
+	content: "";
+	position: absolute;
+	background:linear-gradient(0deg, #000, #696973);
+	top: 0;
+	left: 0;
+	height:40px;
+	width: 80px;
+	border-radius: 34px;
+	box-shadow: 0 0 1px #232323;
+	transition-duration:.6s;
+}
+
+input[type="checkbox"]:checked:before{
+	display: block;
+	content: "";
+	position: absolute;
+	float: right;
+	left: 40px;
+	background: linear-gradient(0deg, #000, #696973);
+	height:40px;
+	width: 80px;
+	border: transparent;
+	border-radius: 20px;
+			
+}
+
+input[type="checkbox"]:after{
+	position: absolute;
+	content:"";
+	top: calc(50% - 2px);
+	left:65px;
+	height: 4px;
+	width: 4px;
+	border-radius: 50%;
+	background:#cf0f0f ;
+	box-shadow: 5px 5px 10px #ff0404;
+	bottom:32px;
+	right: 125px;
+	transition-duration:0.6s;
+}
+
+input[type="checkbox"]:checked:after{
+	background: #0fc518;
+	left:105px;
+	box-shadow: 0 0 5px	#1f3d4b, 0 0 15px #13b3ff;
+} 
+input[type="checkbox"]:checked{
+	background: #0fc518;
+}
+
+
+.container
+{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.second, .minute, .hour, .hour2
+{
+    height: 300px;
+    width: 10px;
+    top: 20%;
+    left: 47.2%;
+    border-radius: 34px;
+
+}
+
+.second
+{
+    background-color: red;
+    transform: rotate(45deg);
+    box-shadow: 3px 3px 20px red;
+}
+
+
+.minute
+{
+    background-color: blue;
+    transform: rotate(90deg);
+    box-shadow: 3px 3px 20px blue;
+}
+
+.hour
+{
+    background-color: green;
+    transform: rotate(135deg);
+    box-shadow: 3px 3px 20px green;
+
+}
+.hour2
+{
+    background-color: yellow;
+    transform: rotate(180deg);
+    box-shadow: 3px 3px 20px yellow;
+
+}
+
+.second, .minute, .hour, .hour2
+{
+    position: absolute;
+    transition-duration: 1s;
+}
+
+input[type="checkbox"]:checked ~ .second, input[type="checkbox"]:checked ~ .hour, input[type="checkbox"]:checked ~ .minute, input[type="checkbox"]:checked ~ .hour2
+{
+    transform:rotate(21690deg);
+    transition-duration: 15s;
+}
+
+input[type="checkbox"]:checked ~ .second
+{
+	transform: rotate(21825deg);
+}
+
+input[type="checkbox"]:checked ~ .minute
+{
+	transform: rotate(21870deg);
+}
+
+input[type="checkbox"]:checked ~ .hour
+{
+		transform: rotate(21915deg);
+}
+
+input[type="checkbox"]:checked ~ .hour2
+{
+	transform: rotate(21960deg);
+}

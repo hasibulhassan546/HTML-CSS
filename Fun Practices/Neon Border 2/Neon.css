@@ -1,0 +1,135 @@
+body
+{
+    padding: 0;
+    margin: 0;
+    background:black;
+}
+button
+{
+    text-transform: uppercase;
+    margin-right: 20px;
+    border: 5px solid white;
+}
+
+.btn1
+{
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 15px;
+    background: black;
+    border: none;
+    color: white;
+    z-index: 1;
+}
+
+.btn1::before
+{
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 0;
+    height: 5px;
+    width: 5px;
+    background: rgb(5, 163, 255);
+    z-index: -1;
+    opacity: 0;
+    border-top-right-radius: 34px;
+    box-shadow: 0px -1px 10px rgb(5, 163, 255);
+    transition-duration: 0.2s;
+}
+
+.btn1:hover::before
+{
+    opacity: 1;
+    transition-duration: 0.1s;
+    width: calc(100% + 5px);
+}
+
+
+.btn1::after
+{
+    position: absolute;
+    content: "";
+    bottom: 0px;
+    right: 0;
+    height: 5px;
+    width: 5px;
+    background: rgb(5, 163, 255);
+    z-index: -1;
+    opacity: 0;
+    border-bottom-left-radius: 34px;
+    box-shadow: 0px 1px 10px rgb(5, 163, 255);
+    transition-duration: 0.2s;
+}
+
+.btn1:hover::after
+{
+    opacity: 1;
+    transition-delay: 0.2s;
+    transition-duration: 0.1s;
+    width: calc(100% + 5px);
+}
+
+
+
+.btn2
+{
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 15px;
+    background: transparent;
+    border: none;
+    color: white;
+}
+
+.btn2::before
+{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: -5px;
+    height: 0%;
+    width: 5px;
+    background: rgb(5, 163, 255);
+    z-index: 1;
+    border-top-right-radius: 34px;
+    border-bottom-right-radius: 34px;
+    box-shadow: 1px 0px 10px rgb(5, 163, 255);
+    transition-duration: 0.2s;
+}
+
+.btn2::after
+{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: -5px;
+    height: 0%;
+    width: 5px;
+    background: rgb(5, 163, 255);
+    z-index: 1;
+    border-top-left-radius: 34px;
+    border-bottom-left-radius: 34px;
+    box-shadow: -1px 0px 10px rgb(5, 163, 255);
+    transition-duration: 0.2s;
+}
+
+.btn1:hover ~ .btn2::before
+{
+    width: 5px;
+    height: 100%;
+    transition-duration: 0.1s;
+    transition-delay: 0.1s;
+}
+
+.btn1:hover ~ .btn2::after
+{
+    width: 5px;
+    height: 100%;
+    transition-delay: 0.3s;
+    transition-duration: 0.1s;
+}

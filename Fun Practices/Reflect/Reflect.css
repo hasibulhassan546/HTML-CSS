@@ -1,0 +1,53 @@
+body
+{
+    padding: 0;
+    margin: 0;
+    background: black;
+}
+
+.cont1
+{
+    position: relative;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, 50px);
+    width: fit-content;
+}
+
+img
+{
+    width: 100px;
+
+}
+
+hr
+{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.img1
+{
+    position: relative;
+    top: 19px;
+    transform: rotate(30deg);
+}
+
+.img2
+{
+    position: relative;
+    transform: rotate(-30deg);
+    top: 3px;
+}
+
+.cont2::before
+{
+    content: "";
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    top: 128px;
+    left: -7px;
+    background: linear-gradient(180deg,rgb(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5));
+    z-index: 2;
+}

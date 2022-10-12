@@ -1,0 +1,125 @@
+body
+{
+    padding: 0%;
+    margin: 0%;
+    /* background: rgb(202, 202, 212); */
+    background: url(img/Background.jpeg) no-repeat ;
+}
+
+.water
+{
+    position: relative;
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* width: 240px; */
+    max-width: 500px;
+    height: 350px;
+    /* border: 2px solid black; */
+    box-shadow: 4px 4px 5px #000; 
+    border-radius: 34px;
+    backdrop-filter: blur(2px);
+}
+
+.water::before
+{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /* background: green; */
+    border-radius: 34px;
+    box-shadow: -3px -3px 10px #fff; 
+}
+
+.water img
+{
+    position: relative;
+    left: 50%;
+    top: 10px;
+    transform: translate(-50%);
+    width: 70px;
+    height: 70px;
+    border: 2px solid green;
+    border-radius: 50%;
+}
+
+h2
+{
+    text-transform: uppercase;
+    color: green;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+input
+{
+    position: absolute;
+    /* left: 13px; */
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 20px;
+    /* top: 50px; */
+    padding: 10px 100px 10px 20px;
+    border: none;
+    border-left: 3px solid green;
+    outline: none;
+}
+
+.input2
+{
+    position: absolute;
+    top: 200px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+input[placeholder]
+{
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+button
+{
+    position: relative;
+    display: inline-block;
+    margin-top: 120px;
+    width: 80px;
+    height: 40px;
+    left: 50%;
+    transform: translate(-100%);
+    font-weight: 800;
+}
+
+.btn1
+{
+    border: none;
+    background: white;
+    color: green;
+    text-transform: uppercase;
+}
+
+.btn1:hover
+{
+    border-bottom: 3px solid green ;
+    transition-duration: 0.1s;
+}
+
+.btn2
+{
+    border: none;
+    background: white;
+    color: red;
+
+    text-transform: uppercase;
+}
+
+.btn2:hover
+{
+    border-bottom: 3px solid red ;
+    transition-duration: 0.1s;
+}

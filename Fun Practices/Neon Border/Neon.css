@@ -1,0 +1,326 @@
+body
+{
+    padding: 0;
+    margin-top: 0;
+    background: #050714;
+}
+
+.cont
+{
+    position: relative;
+    display: block;
+    top: 250px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+button
+{
+    position: relative;
+    margin: 20px 20px 0 20px;
+    height: 50px;
+    width: 100px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: black;
+    color: white;
+    transition-duration: 0.3s;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Button1 starts here */
+
+.btn1
+{
+    border: 3px solid white;
+    border-radius: 34px;
+}
+.btn1:hover
+{
+    background: black;
+    color: rgb(27, 221, 163);    
+    border: 3px solid rgb(27, 221, 163);
+    box-shadow: 0px 0px 10px rgb(27, 221, 163);
+    transition-duration: 0.3s;
+
+}
+
+/* Button1 ends here */
+
+/* Button2 starts here */
+
+ .btn2
+{
+    border: none;
+}
+
+.btn2:hover
+{
+    color: rgb(27, 221, 163);
+    transition-duration: 0.3s;
+    border: none;
+}
+
+.btn2::before
+{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    width: 60%;
+    height: 2px;
+    background: rgb(27, 221, 163);
+    box-shadow: 0px 0px 20px rgb(27, 221, 163);
+    transform: translate(-50%);
+    transition-duration: 0.3s;
+}
+
+.btn2:hover:before
+{
+    transition-duration: 0.3s;
+    transform: translate(-50%);
+    width: 100%;
+    border-radius: 34px;
+    box-shadow: 0px 0px 6px rgb(27, 221, 163);
+}
+
+.btn2::after
+{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 50%;
+    width: 60%;
+    height: 2px;
+    background: rgb(27, 221, 163);
+    box-shadow: 0px 0px 20px rgb(27, 221, 163);
+    transform: translate(50%);
+    transition-duration: 0.3s;
+    border-radius: 34px;
+    box-shadow: 0px 0px 6px rgb(27, 221, 163);
+}
+
+.btn2:hover::after
+{
+    transform: translate(50%);
+    transition-duration: 0.3s;
+    width: 100%;
+}
+
+/* Button2 ends here */
+
+/* Button3 starts here */
+
+.btn3
+{
+    border-top: 2px solid rgb(27, 221, 163);
+    border-bottom: 2px solid rgb(27, 221, 163);
+}
+
+.btn3:hover
+{
+    color:rgb(27, 221, 163);
+    box-shadow: 0px 0px 6px rgb(27, 221, 163);
+}
+.btn3::before
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: calc(100% - 6px);
+    height: 0%;
+    background-color: transparent;
+    border-right: 3px solid rgb(27, 221, 163);
+    border-left: 3px solid rgb(27, 221, 163);
+    transition-duration: 0.3s;
+}
+
+.btn3:hover:before
+{
+    height: 40%;
+    opacity: 1;
+    transition-duration: 0.3s;
+}
+
+.btn3::after
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 6px);
+    height: 0%;
+    background-color: transparent;
+    border-right: 3px solid rgb(27, 221, 163);
+    border-left: 3px solid rgb(27, 221, 163);
+    transition-duration: 0.3s;
+}
+
+.btn3:hover::after
+{
+    height: 40%;
+    opacity: 1;
+    transition-duration: 0.3s;
+}
+
+/* Button 3 ends here */
+
+/* Button 4 starts here */
+
+.btn4
+{
+    border: 3px solid rgb(27, 221, 163);
+}
+
+.btn4:hover
+{
+    color:rgb(27, 221, 163);
+    box-shadow: 0px 0px 8px rgb(27, 221, 163);
+    transition-delay: 0.2s;
+}
+
+.btn4::before
+{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -3px;
+    transform: translate(0, -50%);
+    width: 100%;
+    height: 100%;
+    /* background-color: violet; */
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    transition-duration: 0.3s;
+}
+
+.btn4:hover:before
+{
+    height: 0;
+    width: 100;
+}
+
+.btn4::after
+{
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    height: 100%;
+    /* background-color: violet; */
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    transition-duration: 0.3s;
+}
+
+.btn4:hover::after
+{
+    height: 100%;
+    width: 0;
+}
+
+/* Button 4 ends here */
+
+/* Button 5 starts here */
+.btn5
+{
+    border: 3px solid rgb(27, 221, 163);
+}
+
+.btn5:hover
+{
+    color: rgb(27, 221, 163);
+    box-shadow: 0px 0px 6px rgb(27, 221, 163);
+}
+
+.btn5::before
+{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -3px;
+    transform: translate(0, -50%);
+    width: 100%;
+    height: 60%;
+    background-color: transparent;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    transition-duration: 0.3s;
+}
+
+.btn5:hover:before
+{
+    height: 10%;
+}
+
+.btn5::after
+{
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80%;
+    height: 100%;
+    background-color: transparent;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    transition-duration: 0.3s;
+}
+
+.btn5:hover::after
+{
+    width: 4%;
+}
+
+/* Button 5 ends here */
+
+/* Button 6 starts here */
+
+.btn6
+{
+    border: 3px solid rgb(27, 221, 163);
+}
+
+.btn6::before
+{
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: -3px;
+    width: 3px;
+    height: 10px;
+    background-color: black;
+    transition-duration: 0.4s;
+}
+
+.btn6::after
+{
+    position: absolute;
+    content: "";
+bottom: 0px;            
+    right: -3px;
+    width: 3px;
+    height: 10px;
+    background-color: black;
+    transition-duration: 0.4s;
+}
+
+.btn6:hover:before
+{
+    top: 34px;
+    transition-duration: 0.4s; 
+}
+
+.btn6:hover::after
+{
+    bottom: 34px; 
+    transition-duration: 0.4s;  
+}
+
+/* Button 6 ends here */

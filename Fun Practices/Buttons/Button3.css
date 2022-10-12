@@ -1,0 +1,72 @@
+button
+{
+    position: relative;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    /* border: 2px solid black; */
+    border-radius: 34px;
+    background: green;
+    overflow: hidden;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* transition-duration: 0.9s; */
+}
+
+button::before
+{
+    position: absolute;
+    content: "";
+    width: 200%;
+    height: 100%;
+    top: 0;
+    left: 0px;
+    background: green;
+    z-index: -1;
+    transform: rotate(45deg);
+    transition-duration: 0.4s;
+}
+
+button::after
+{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 200%;
+    top: 17px;
+    left: -7px;
+    background: rgb(206, 99, 12);
+    z-index: -1;
+    transform: rotate(10deg);
+    transition-duration: 0.4s;
+}
+
+button::active
+{
+    background: linear-gradient(-135deg, rgba(206, 99, 12, 0.1), rgba(0, 134, 0, 0.1));
+}
+
+button:hover
+{
+    color: white;
+    background: linear-gradient(-135deg, rgb(206, 99, 12), green);
+    border: none;
+    /* padding: 12px 22px; */
+}
+
+button:hover::before
+{
+    transform: rotate(0deg);
+    transition-duration: 0.4s;
+    opacity: 0;
+}
+
+button:hover::after
+{
+    transform: rotate(0deg);
+    transition-duration: 0.4s;
+    opacity: 0;
+}
