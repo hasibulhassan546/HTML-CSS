@@ -1,0 +1,518 @@
+body
+{
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+}
+
+nav
+{
+    overflow: auto;
+    position: fixed;
+    width: 100%;
+    font-family: sans-serif;
+    background: rgba(83, 80, 80, 0.83);
+    z-index: 2;
+}
+
+.nav-block
+{
+    display: inline-block;
+    width: fit-content;
+}
+
+nav img
+{
+    position: relative;
+    left: 85px;
+    top: 5px;
+    width: 25px;
+}
+
+nav h2
+{
+    display: inline-block;
+    position: relative;
+    width: 350px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 10px;
+    color: white;
+
+}
+
+.link
+{
+    float: right;
+    margin: 0 50px 0 0 ;
+}
+
+nav li
+{
+    list-style: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 40px;
+    line-height: 50px;
+}
+
+nav a
+{
+    text-decoration: none;
+    color: white;
+    font-family: "Segoe UI";
+    font-weight: 300;
+}
+
+nav a:hover
+{
+    color:  rgb(5, 214, 214);
+}
+
+nav a:active
+{
+    color: white;
+}
+
+header
+{
+    position: relative;
+    background: url(img/bg-masthead.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+}
+
+header::before
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    height: 650px;
+    top: 51px;
+    left: 0%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.details
+{
+    position: absolute;
+    display: block;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+header h1
+{
+    position: relative;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 90px;
+    text-transform: uppercase;
+    font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    letter-spacing: 7px;
+    background: linear-gradient(rgba(104, 100, 100, 0.9), rgba(255, 255, 255, 0.9));
+    background-clip: content-box;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin: 0 auto;
+}
+
+
+header p
+{
+    position: relative;
+    transform: translate(15%);
+    font-size: 20px;
+    text-align: center;
+    width: 400px;
+    font-family:  "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+    color: white;
+    margin-top: 25px;
+}
+header h1, p
+{
+    display: block;
+    color: black;
+    text-align: center;
+}
+
+header a
+{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    background-color: rgb(0, 128, 128);
+    text-transform: uppercase;
+    font-size: 20px 15px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    border-radius: 4px;
+}
+
+header a:hover
+{
+    background: rgb(1, 99, 99);
+    transition-duration: 0.5s;
+}
+
+.container
+{
+    position: relative;
+    width: auto;
+    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .5));
+    margin-top: -25px;
+    overflow: hidden;
+     
+}
+
+.container a
+{
+    color: rgba(18, 224, 180, 1);
+}
+
+.container h1
+{
+    position: relative;
+    top:50px;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.container p
+{
+    position: relative;
+    top:50px;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    width: 60%;
+
+}
+
+
+.container img
+{
+    position: relative;
+    top: 155px;
+    height: 200px;
+    width: 100%;
+}
+
+.container2
+{
+    display: flex;
+    height: fit-content;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 30px;
+    background:linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 1) );
+    margin-top: -25px;;
+     
+
+}
+
+
+.container2 .tiles
+{
+    position: relative;
+    width: 450px;
+    height: 250px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 50px 0px 0px 0px;
+}
+
+.container2 > .bg:hover
+{
+   transform: scale(1.05);
+   transition-duration: 0.5s;
+   box-shadow: 0 2px 20px rgba(255, 255, 255, 0.4);
+}
+
+.container2 h2
+{
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.container2 p
+{
+    color: black;
+}
+
+.bg
+{
+    background: url(img/bg-masthead.jpg);
+    background-size: cover;
+    z-index: 0;
+    box-shadow: 0 3px 10px #000;
+
+}
+
+.bg::before
+{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 70%;
+    top: 55px;
+    right: -10px;
+    background: rgba(18, 224, 180, 1);
+    z-index: -1;
+}
+
+.tiles h2
+{
+    text-align: center;
+}
+
+.container3
+{
+    background: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tiles2
+{
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.bg1::before, .bg2::before
+{
+    content: "";
+    position: absolute;
+    width: 87%;
+    height: 100%;
+    top: 0;
+    left: 50px;
+    background: rgba(104, 100, 100, 0.1);
+    z-index: 1;
+}
+
+.bg1
+{
+    position: relative;
+    background: url(img/demo-image-01.jpg) no-repeat center center ;
+
+}
+
+.bg2
+{
+    position: relative;
+    background: url(img/demo-image-02.jpg) no-repeat center center;
+
+}
+
+.sub-tiles
+{
+    position: relative;
+    top: 100%;
+    left: 0%;
+    transform: translate(0, -100%);
+    width: 100%;
+    height: 40%;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, .6);
+    opacity: 0;
+}
+
+.tiles2:hover
+{
+    transform: scale(1.01);
+    transition-duration: 0.6s;
+    box-shadow: 0 1px 40px rgba(255, 255, 255, 0.3);
+}
+
+.tiles2:hover .sub-tiles
+{
+    opacity: 1;
+    transition-duration: 0.9s;
+}
+
+.sub-tiles h2
+{
+    text-align: center;
+    color: rgb(5, 214, 214);
+    margin: 0 50px;
+}
+
+.sub-tiles p
+{
+    text-align: center;
+    color: white;
+    margin: 0 50px;
+    font-weight: 200;
+}
+
+.subscribe
+{
+    position: relative;
+    height: 400px;
+    background: url(img/bg-signup.jpg) no-repeat center center;
+    background-size: cover;
+    margin-top: -21px;
+     
+}
+
+.subscribe::before
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(104, 100, 100, 0.3), rgba(0, 0, 0, 0.9) );
+}
+
+.subscribe .sub
+{
+    position: absolute;
+    width: fit-content;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+
+.subscribe input
+{
+    height: 48px;
+    width: 240px;
+    border: transparent;
+    border-radius: 5px;
+    outline: none;
+    font-weight: 700;
+    padding: 0 30px;
+}
+
+.subscribe input::placeholder
+{
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.subscribe button
+{
+    padding: 15px;
+    background: rgb(0, 128, 128);
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 5px;
+    font-family:'Segoe UI';
+    border-radius: 5px;
+    border: transparent;
+} 
+
+.subscribe button:hover
+{
+    background: rgb(0, 99, 99);
+    transition-duration: 0.5s;
+}
+
+.contact
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: linear-gradient(rgba(0, 0, 0,1), rgba(0,0,0,0.5));
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 50px;
+    font-family:'Segoe UI';
+     
+}
+
+.tiles3
+{
+    position: relative;
+    width: 280px;
+    height: 180px;
+    margin:40px 20px 0 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-bottom: 5px solid rgba(18, 224, 180, 1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.tiles3 h4
+{
+   color: gray;
+   letter-spacing: 1px;
+   text-align: center;
+}
+
+hr
+{
+    width: 70%;
+}
+
+.tiles3 > p
+{
+    position: relative;
+    color: gray;
+    width: fit-content;
+    margin: 40px auto;
+}
+
+.tiles3 a
+{
+    text-decoration: none;
+    color: gray;
+}
+.tiles3 a:hover
+{
+    text-decoration: underline;
+}
+
+.loader 
+{
+   background: linear-gradient(rgba(0,0,0,0.5), rgba(0, 0, 0, 1));
+    height: fit-content;
+    padding-bottom: 50px;
+     
+}
+
+.loader p
+{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.load
+{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: fit-content;
+    margin-bottom: 20px;
+}
+
+.circle
+{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    border-radius: 50%;
+    background: rgba(104, 100, 100, 1);
+}
